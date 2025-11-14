@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Современный сайт с Flex и Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <button id="themeToggle">🌓 Темная тема</button>
+  <h1>Мой современный сайт</h1>
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Галерея</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="banner">
+  <h2>Создаем адаптивные сайты</h2>
+  <p>Flexbox + CSS Grid = мощь и красота</p>
+</section>
+
+<main class="main-grid">
+  <section class="content">
+    <h2>О компании</h2>
+    <p>Мы специализируемся на создании современных сайтов, где дизайн и функциональность идут рука об руку.</p>
+  </section>
+
+  <aside class="sidebar">
+    <h3>Новости</h3>
+    <ul>
+      <li><a href="#">Открыт новый офис</a></li>
+      <li><a href="#">Запуск нового проекта</a></li>
+      <li><a href="#">Скидки в октябре</a></li>
+    </ul>
+  </aside>
+</main>
+
+<!-- ==== ГАЛЕРЕЯ СЛУЧАЙНЫХ ФОТО ==== -->
+<section class="gallery">
+  <h2>Галерея</h2>
+  <div id="images" class="gallery-grid"></div>
+</section>
+
+<!-- ==== ОТЗЫВЫ ==== -->
+<section class="reviews-carousel">
+  <h2>Отзывы клиентов</h2>
+   <!-- КНОПКА ОБНОВЛЕНИЯ -->
+  <button id="reloadReviews" class="reload-btn">Обновить отзывы</button>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev">‹</button>
+
+    <div class="carousel-track">
+      <div class="review-card"><p>Загрузка...</p><span></span></div>
+      <div class="review-card"><p>Загрузка...</p><span></span></div>
+      <div class="review-card"><p>Загрузка...</p><span></span></div>
+      <div class="review-card"><p>Загрузка...</p><span></span></div>
+    </div>
+
+    <button class="carousel-btn next">›</button>
+  </div>
+</section>
+
+<!-- ==== КОНТАКТЫ ==== -->
+<section class="contact">
+  <h2>Свяжитесь с нами</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="email" placeholder="Ваш email" required>
+    <textarea placeholder="Ваше сообщение"></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Все права защищены | Мой сайт</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
